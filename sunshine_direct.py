@@ -14,7 +14,7 @@ The openai app implementation.
 _SYSTEM_MSG = ChatCompletionSystemMessageParam(content="You are a degenerate bookie with acute math skills", role="system")
 
 logger = logging.getLogger(__name__)
-_model = "gpt-4-1106-preview"
+_model = "gpt-3.5-turbo-16k"
 _client = openai.OpenAI()
 
 
