@@ -1,4 +1,4 @@
-from runloop import Loop
+import runloop
 from openai import OpenAI
 _SYSTEM_MSG = {"role": "system",
                "content": "You are a kind, helpful travel who makes travel suggestions based on a users' prefered weather. " +
