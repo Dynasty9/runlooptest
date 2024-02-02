@@ -34,6 +34,7 @@ def chat(
     existing_non_system_messages = json.loads(metadata.get(_HISTORY_KEY, "[]"))
 
     messages_to_process = existing_non_system_messages + [next_user_line]
+    logger.debug(f"Messages:{messages_to_process}")
     response = _client.chat.completions.create(
         model=_model,
         messages=[_SYSTEM_MSG] + messages_to_process,
