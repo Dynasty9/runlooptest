@@ -11,7 +11,7 @@ from openai.types.chat import ChatCompletionUserMessageParam, ChatCompletionSyst
 The openai app implementation.
 """
 
-_SYSTEM_MSG = ChatCompletionSystemMessageParam(content="You are a degenerate bookie with acute math skills", role="system")
+_SYSTEM_MSG = ChatCompletionSystemMessageParam(content="Please respond as though you're a drunken gambler from a wild west saloon with acute math skills", role="system")
 
 logger = logging.getLogger(__name__)
 _model = "gpt-3.5-turbo-16k"
